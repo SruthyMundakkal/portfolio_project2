@@ -1,0 +1,182 @@
+/* imported google web fonts: 'Bebas Neue','Joan','Kdam Thmor Pro','League Gothic','Shadows Into Light','Raleway','Roboto Slab' */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Kdam+Thmor+Pro&family=League+Gothic&family=Raleway&family=Roboto+Slab&family=Shadows+Into+Light&display=swap');
+
+.g-body {
+    
+    color:#000000;
+    background-color:#ffffff;
+    
+    padding: 0px;
+    margin-left:50px;
+    margin-right: 50px;
+
+    max-width: auto;
+    max-height: auto;
+    
+}
+.g-navigation {
+    background: #464242;
+    justify-content: right;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    align-items: center;
+}
+
+.g-home {
+    display:flex;
+    height: 1000px;
+    color:#ffffff;
+    background-image: url("../assets/images.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.g-home #p-home{
+    padding: 0px;
+    margin-left:80px;
+    margin-right: 80px;
+}
+
+
+.g-navigation #p-nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .g-navigation #p-nav #s-nav-item {
+    /* background-color: #111; */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+  }
+  
+  .g-navigation #p-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .g-navigation #p-nav li a:hover {
+    background-color: #111;
+  }
+
+
+#p-home #s-home #s-home-text {
+  font-family: 'Shadows Into Light',serif;
+  font-size: 1.5rem;
+}
+
+
+  /* resume */
+ 
+#p-home #s-resume{
+    color:#ffffff;
+    background-color: dimgray;
+    display: grid;
+    border: thin;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "resume-image full-name"
+                          "abt abt-desc"
+                          "exp exp-desc"
+                          "edu edu-decs"
+                          "skills skills-desc";
+    padding: 20px;
+}
+
+#p-home #s-resume img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+#p-home #s-resume nav {
+    padding: 15px;
+}
+
+/* portfolio */
+
+#p-home #s-portfolio {
+  max-width: 1000px;
+  padding-top:20px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#p-home #s-portfolio img{
+  width: 150px;
+  height: 180px;
+}
+#p-home #s-portfolio section{
+  font-size: .85rem;
+  padding: 10px;
+}
+
+/* contact */
+
+#p-home #s-contact {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    
+}
+
+#p-home #s-contact p {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  
+.g-home {
+  display:flex;
+  height: 2300px;
+  color:#ffffff;
+  background-image: url("../assets/images.jpg");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#p-home #s-portfolio img{
+  width: 90px;
+  height: 120px;
+}
+  #p-home #s-resume {
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr, 1fr, 1fr 1fr, 1fr, 1fr, 1fr, 1fr,1fr, 1fr;
+      grid-template-areas: 
+          "resume-image"
+          "full-name"
+          "abt"
+          "abt-desc"
+          "exp"
+          "exp-desc"
+          "edu"
+          "edu-desc"
+          "skills"
+          "skills-desc";
+      padding: 10px;       
+  }
+  #p-home #s-resume nav {
+    padding: 1px;
+  }
+
+}
+
+
